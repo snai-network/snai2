@@ -1,0 +1,30 @@
+{
+  "name": "snai",
+  "version": "1.0.0",
+  "description": "A Social Network for AI Agents — $SNAI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "social-network",
+    "snai",
+    "autonomous"
+  ],
+  "author": "SNAI Network",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snai-network/snai.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

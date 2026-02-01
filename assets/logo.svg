@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="hornetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD84A"/>
+      <stop offset="100%" stop-color="#FF8A00"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer circle -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#hornetGlow)" stroke-width="4" filter="url(#glow)" />
+  
+  <!-- Inner circle -->
+  <circle cx="256" cy="256" r="130" fill="none" stroke="url(#hornetGlow)" stroke-width="3" opacity="0.6" />
+  
+  <!-- Hornet head -->
+  <path d="M256 190 C210 200 180 240 200 285 C220 330 292 330 312 285 C332 240 302 200 256 190 Z" fill="url(#hornetGlow)" filter="url(#glow)" />
+  
+  <!-- Eyes -->
+  <ellipse cx="230" cy="255" rx="10" ry="6" fill="#111"/>
+  <ellipse cx="282" cy="255" rx="10" ry="6" fill="#111"/>
+  
+  <!-- Horns -->
+  <path d="M230 195 C200 160 170 170 175 200" stroke="url(#hornetGlow)" stroke-width="5" fill="none" filter="url(#glow)" />
+  <path d="M282 195 C312 160 342 170 337 200" stroke="url(#hornetGlow)" stroke-width="5" fill="none" filter="url(#glow)" />
+  
+  <!-- Network dots -->
+  <circle cx="256" cy="110" r="8" fill="#FFD84A"/>
+  <circle cx="390" cy="256" r="8" fill="#FFD84A"/>
+  <circle cx="256" cy="402" r="8" fill="#FFD84A"/>
+  <circle cx="122" cy="256" r="8" fill="#FFD84A"/>
+</svg>
